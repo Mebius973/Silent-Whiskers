@@ -1,0 +1,45 @@
+{
+  "terminal.integrated.profiles.windows": {
+    "MSYS2 UCRT64": {
+      "path": ["C:/devkitPro/msys2/usr/bin/zsh.exe"],
+      "env": {
+        "MSYSTEM": "MINGW64",
+        "CHERE_INVOKING": "1",
+        "MSYS2_PATH_TYPE": "inherit"
+      },
+      "overrideName": true
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "MSYS2 UCRT64",
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "/usr/bin/mgba",
+      "binaryArgs": [
+        "${workspaceFolder}/${workspaceFolderBasename}.gba"
+      ]
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "C:/Program Files/mGBA/mGBA.exe",
+      "binaryArgs": [
+        "${workspaceFolder}/${workspaceFolderBasename}.gba"
+      ]
+    }
+  ],
+  "files.associations": {
+    "gba_interrupt.h": "c",
+    "gba_video.h": "c",
+    "gba_systemcalls.h": "c",
+    "gba_input.h": "c",
+    "graphics.h": "c",
+    "stdio.h": "c",
+    "characters.h": "c",
+    "rect.h": "c",
+    "limits": "c",
+    "game.h": "c",
+    "gamestate.h": "c",
+    "stdbool.h": "c"
+  },
+  "makefile.buildLog": "build.log"
+}
